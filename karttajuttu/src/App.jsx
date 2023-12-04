@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import './App.css';
+
 //import Services from "./components/Yhdistin";
 
 
@@ -17,12 +18,11 @@ function App() {
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'/>
-          
-          <Marker position={[paikkax,paikkay]}>
+              <Marker position={[paikkax,paikkay]}>
             <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+                A pretty CSS3 popup. <br /> Easily customizable.
             </Popup>
-          </Marker>
+        </Marker>
         </MapContainer></div>
     </>
   );
